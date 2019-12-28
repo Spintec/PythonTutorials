@@ -19,3 +19,4 @@ for x in [1,2,3]:
         if x!=y:
             combs.append((x,y))  #daca nu pun 2 paranteze, combs.append crede ca ii dau 2 argumente.
 print(combs)
+
