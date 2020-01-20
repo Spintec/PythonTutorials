@@ -9,3 +9,4 @@ def second_index(text,symbol):
     sec=text.find(symbol,pri+1)
     return sec
 print(second_index("sims", "s"))
+#test line
