@@ -1,12 +1,10 @@
-from decimal import *
-getcontext().prec=3
 def checkio(*args):
     if args:
-        result = Decimal(max(*args)) - Decimal(min(*args))
+        result=max(args)-min(args)
+        result=round(result,3)
+        return result
     else:
         return 0
-
-    return result
 
 print(checkio(1, 2, 3))
 print(checkio(5, -5))
