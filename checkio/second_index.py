@@ -10,3 +10,4 @@ def second_index(text,symbol):
     return sec
 print(second_index("sims", "s"))
 #test line
+#test line 2
