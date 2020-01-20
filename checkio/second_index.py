@@ -1,13 +1,16 @@
-def second_index(text,symbol):
+def second_index(text, symbol):
     """
         returns the second index of a symbol in a given text
     """
     # your code here
-    if text.count(symbol)<2:
+    if text.count(symbol) < 2:
         return None
-    pri=text.find(symbol)
-    sec=text.find(symbol,pri+1)
+    pri = text.find(symbol)
+    sec = text.find(symbol, pri + 1)
     return sec
+
+
 print(second_index("sims", "s"))
-#test line
-#test line 2
+# test line
+# test line 2
+/etc/resolv.conf
