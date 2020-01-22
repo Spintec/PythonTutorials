@@ -7,9 +7,6 @@ def popular_words(text: str, words: list) -> dict:
     return dictz
 
 
-
-
-
 print(popular_words('''
 When I was One
 I had just begun

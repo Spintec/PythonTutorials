@@ -7,3 +7,4 @@ def checkio(array):
         return 0
     else:
         return multi*array[-1]
+
