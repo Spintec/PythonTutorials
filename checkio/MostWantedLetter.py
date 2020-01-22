@@ -2,18 +2,14 @@ def checkio(str):
     result={}
     for letter in str:
         letter=letter.lower()
-        if letter not in result and (letter.isdigit() or letter.isalpha()):
+        if letter not in result and  letter.isalpha():
             result[letter]=1
-        elif letter in result and (letter.isdigit() or letter.isalpha()):
+        elif letter in result and letter.isalpha():
             result[letter]=result[letter]+1
-    keyz=(list(result.keys()))
-    keyz.sort()
-    print(keyz)
     n=max(list(result.values()))
-
+    result={k:v for k,v in sorted(result.items(),key=lambda item:item)}
     return (list(result.keys())[list(result.values()).index(n)])
 
-# MAI RAMANE SA SORTEZ ALFABETIC!!!!!!!! pentru ca strine 'One' sa returneze 'e' in loc de 'o'
 
 #same as:
 #    key_list=list(result.keys())
