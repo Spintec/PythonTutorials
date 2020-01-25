@@ -6,6 +6,7 @@ def checkio(str):
             result[letter]=1
         elif letter in result and letter.isalpha():
             result[letter]=result[letter]+1
+    print(result)
     n=max(list(result.values()))
     result={k:v for k,v in sorted(result.items(),key=lambda item:item)}
     return (list(result.keys())[list(result.values()).index(n)])
